@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('alexbrush-regular.ttf')  format('truetype'), 
+        url('alexbrush-regular.woff')  format('woff'),
+        url('alexbrush-regular.woff2')  format('woff2');
+  }
+
+body {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-size: 16px;
+    padding: 3em;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    font-family: 'VT323', monospace;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Alex Brush', cursive;
+    text-shadow: 1px 0 0.5em #316e83;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    font-size: 1.6em;
+    border: 1px solid #6c7b85;
+    border-radius: 0.25em;
+    cursor: pointer;
+    background-image: linear-gradient(to right bottom, #678cc4, #6681ba, #6576af, #646ba4, #636099);
+    box-shadow: 0 0.25em 0.5em 0.2em #5a657a;
+
+}
+
+button:hover {
+    background-image: linear-gradient(to right bottom, #9db6db, #94a8d0, #8d9ac5, #868bb9, #807dac);
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.35em 0.6em 0.1em #5a657a;
+}
+
+@media(max-width: 768px) {
+    button {
+        width: 100%;
+    }
+}
+
+#curvedarrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid rgb(197, 204, 100);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  #curvedarrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid rgb(197, 204, 100);
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
